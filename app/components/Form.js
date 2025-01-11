@@ -111,13 +111,15 @@ export default function Form() {
   return (
     <div className="relative bg-white p-6 md:p-8 rounded-lg shadow-md max-w-md mx-auto border border-gray-200 font-allround-medium">
       {/* Header */}
-      <h1 className="text-2xl font-bold text-center text-gray-800 mb-6 font-allround-bold">Buy Forex Currency</h1>
+      <h1 className="text-xl md:text-2xl font-bold text-center text-gray-800 mb-6 font-allround-bold">
+        Buy Forex Currency
+      </h1>
 
       <form className="space-y-4" onSubmit={handleSubmit}>
         {/* Select City */}
-        <div className="">
+        <div>
           <label className="block text-gray-700 font-medium mb-1">Select City</label>
-          <select className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+          <select className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm">
             <option>Select City</option>
           </select>
         </div>
@@ -125,8 +127,8 @@ export default function Form() {
         {/* Forex Amount */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">Forex Amount</label>
-          <div className="flex items-center">
-            <span className="bg-gray-100 text-gray-700 font-mono px-4 py-2 rounded-l-lg border border-gray-300">
+          <div className="flex flex-wrap gap-2 items-center">
+            <span className="bg-gray-100 text-gray-700 font-mono px-4 py-2 rounded-lg border border-gray-300">
               {exchangeRates[selectedCurrency].symbol}
             </span>
             <input
@@ -134,12 +136,12 @@ export default function Form() {
               value={forexAmount}
               onChange={handleForexChange}
               placeholder="Forex Amount"
-              className="flex-1 px-4 py-2 border-t border-r border-b rounded-r-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm"
             />
             <select
               value={selectedCurrency}
               onChange={handleCurrencyChange}
-              className="ml-2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm"
             >
               <option value="USD">USD</option>
               <option value="EUR">EUR</option>
@@ -151,8 +153,8 @@ export default function Form() {
         {/* Pay INR Amount */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">Pay</label>
-          <div className="flex items-center">
-            <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-l-lg border border-gray-300">
+          <div className="flex flex-wrap gap-2 items-center">
+            <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg border border-gray-300">
               ₹
             </span>
             <input
@@ -160,9 +162,9 @@ export default function Form() {
               value={inrAmount}
               onChange={handleInrChange}
               placeholder="INR Amount"
-              className="flex-1 px-4 py-2 border-t border-r border-b rounded-r-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm"
             />
-            <span className="ml-2 text-gray-500 font-mono">1 = ₹ {conversionRate}</span>
+            <span className="text-gray-500 font-mono text-sm">1 = ₹ {conversionRate}</span>
           </div>
         </div>
 
@@ -174,7 +176,7 @@ export default function Form() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter your Name"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm"
           />
         </div>
 
@@ -186,14 +188,14 @@ export default function Form() {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             placeholder="Enter your Phone Number"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm"
           />
         </div>
 
         {/* WhatsApp Updates */}
         <div className="flex items-center gap-2">
           <input type="checkbox" id="whatsapp" className="form-checkbox text-blue-400" />
-          <label htmlFor="whatsapp" className="text-gray-700">
+          <label htmlFor="whatsapp" className="text-gray-700 text-sm">
             Receive Updates on WhatsApp
           </label>
         </div>
@@ -202,7 +204,7 @@ export default function Form() {
         <div>
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
+            className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition text-sm"
           >
             Request a Callback
           </button>
