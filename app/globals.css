@@ -2,20 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+  width: screen;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base{
+  @font-face {
+    font-family: "allround-bold";
+    src: url("/Fonts/allround-bold.ttf") format("truetype");
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @font-face {
+    font-family: "allround-light";
+    src: url("/Fonts/allround-light.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "allround-medium";
+    src: url("/Fonts/allround-medium.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Sauce-Tomato";
+    src: url("/Fonts/Sauce-Tomato.ttf") format("truetype");
+  }
 }

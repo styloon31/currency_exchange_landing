@@ -7,9 +7,11 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        "allround-bold": ["allround-bold", "sans-serif"],
+        "allround-light": ["allround-light", "sans-serif"],
+        "allround-medium": ["allround-medium", "sans-serif"],
+        "Sauce-Tomato": ["Sauce-Tomato", "sans-serif"],
       },
     },
   },
