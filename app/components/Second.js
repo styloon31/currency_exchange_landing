@@ -4,7 +4,7 @@ export default function Second() {
         <div className="grid w-full h-full grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left Section */}
           <div className="flex items-center justify-center">
-            <h1 className="font-Sauce-Tomato font-bold text-4xl md:text-6xl text-blue-400 text-center">
+            <h1 className="font-Helvetica font-bold text-4xl md:text-6xl text-blue-400 text-center">
               What do we do
             </h1>
           </div>

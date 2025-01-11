@@ -22,7 +22,7 @@ export default function HeroForm() {
               className="h-10 w-10 md:h-12 md:w-12"
             />
             <h1 className="font-allround-bold text-2xl md:text-3xl text-white">
-              7janpath
+              7Janpath Forex
             </h1>
           </div>
           <div>

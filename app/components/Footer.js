@@ -13,7 +13,7 @@ export default function Footer() {
           alt="logo"
           className="h-10 w-10 md:h-12 md:w-12"
         />
-        <h1 className="font-allround-bold text-2xl md:text-3xl">7janpath</h1>
+        <h1 className="font-allround-bold text-2xl md:text-3xl">7Janpath Forex</h1>
       </div>
 
       {/* Main Content Section */}
