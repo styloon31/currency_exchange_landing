@@ -109,7 +109,7 @@ export default function Form() {
   };
 
   return (
-    <div className="relative bg-white p-6 md:p-8 rounded-lg shadow-md max-w-md mx-auto border border-gray-200 font-allround-medium">
+    <div className="relative bg-white p-6 md:p-8 rounded-lg shadow-md max-w-md border border-gray-200 font-allround-medium">
       {/* Header */}
       <h1 className="text-xl md:text-2xl font-bold text-center text-gray-800 mb-6 font-allround-bold">
         Buy Forex Currency
