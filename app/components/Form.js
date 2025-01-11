@@ -57,7 +57,7 @@ export default function Form() {
 
   const validateForm = () => {
     // Validate fields
-    if (!name || !phone || !inrAmount || !forexAmount || !city) {
+    if (!name || !phone || !inrAmount || !forexAmount) {
       Swal.fire({
         icon: "error",
         title: "Error",
@@ -92,7 +92,6 @@ export default function Form() {
       inrAmount,
       selectedCurrency,
       conversionRate,
-      city, // Add city to the database
       timestamp: new Date(), // Add a timestamp
     };
 

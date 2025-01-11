@@ -71,7 +71,7 @@ export default function FooterForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md flex items-center justify-center flex-col font-allround-medium"
+      className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md flex items-center justify-center flex-col font-Helvetica"
     >
       {/* Input Fields in a Single Row */}
       <div className="flex flex-wrap gap-4">

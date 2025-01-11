@@ -22,7 +22,7 @@ export default function Footer() {
           {/* Contact Us Section */}
           <div className="col-span-1 flex items-center justify-center">
             <h1 className="text-4xl md:text-6xl font-allround-bold text-center">
-              Contact Us
+              Talk to forex Expert
             </h1>
           </div>
           {/* Footer Form Section */}
