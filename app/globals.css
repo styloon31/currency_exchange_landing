@@ -22,6 +22,10 @@ body{
     src: url("/Fonts/allround-medium.ttf") format("truetype");
   }
   @font-face {
+    font-family: "Helvetica";
+    src: url("/Fonts/Helvetica.ttf") format("truetype");
+  }
+  @font-face {
     font-family: "Sauce-Tomato";
     src: url("/Fonts/Sauce-Tomato.ttf") format("truetype");
   }

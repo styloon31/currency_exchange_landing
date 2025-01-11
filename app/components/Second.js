@@ -11,7 +11,7 @@ export default function Second() {
           
           {/* Right Section */}
           <div className="flex items-center justify-center">
-            <p className="font-allround-medium text-base md:text-xl text-justify leading-relaxed">
+            <p className="font-Helvetica text-base md:text-xl text-justify">
               7janpath provides essential services that enable individuals and
               businesses to convert one currency into another. The company plays a
               critical role in facilitating international trade, travel, and

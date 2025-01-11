@@ -21,9 +21,9 @@ export default function Third() {
               Why Choose Us?
             </h2>
             <div className="w-full h-full flex items-center justify-center">
-              <p className="text-gray-600 mt-2 font-allround-medium max-w-md text-sm md:text-base leading-relaxed">
-                We<span className="font-mono">&apos;</span>re not just about transactions, we
-                <span className="font-mono">&apos;</span>re about relationships. Here<span className="font-mono">&apos;</span>s why we<span className="font-mono">&apos;</span>re
+              <p className="text-gray-600 mt-2 font-Helvetica max-w-md text-sm md:text-base leading-relaxed">
+                We&apos;re not just about transactions, we
+                &apos;re about relationships. Here&apos;s why we&aposre
                 the first choice for individuals and corporations alike.
               </p>
             </div>
@@ -37,7 +37,7 @@ export default function Third() {
               <h3 className="font-bold text-2xl md:text-3xl font-allround-bold text-gray-800">
                 Direct, Instant Service
               </h3>
-              <p className="text-gray-600 mt-4 font-allround-medium text-sm md:text-base leading-relaxed">
+              <p className="text-gray-600 mt-4 font-Helvetica text-sm md:text-base leading-relaxed">
                 No hidden fees or surprises. Our rates are upfront and
                 competitive.
               </p>
@@ -49,7 +49,7 @@ export default function Third() {
               <h3 className="font-bold text-2xl md:text-3xl font-allround-bold text-gray-800">
                 28 Years of Forex Expertise
               </h3>
-              <p className="text-gray-600 mt-4 font-allround-medium text-sm md:text-base leading-relaxed">
+              <p className="text-gray-600 mt-4 font-Helvetica text-sm md:text-base leading-relaxed">
                 Our knowledge is your advantage in the currency markets, guiding
                 you to financial success.
               </p>
@@ -61,7 +61,7 @@ export default function Third() {
               <h3 className="font-bold text-2xl md:text-3xl font-allround-bold text-gray-800">
                 A Well Known Brand in Foreign Exchange
               </h3>
-              <p className="text-gray-600 mt-4 font-allround-medium text-sm md:text-base leading-relaxed">
+              <p className="text-gray-600 mt-4 font-Helvetica text-sm md:text-base leading-relaxed">
                 No hidden fees or surprises. Our rates are upfront and
                 competitive.
               </p>
