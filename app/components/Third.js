@@ -22,9 +22,8 @@ export default function Third() {
             </h2>
             <div className="w-full h-full flex items-center justify-center">
               <p className="text-gray-600 mt-2 font-Helvetica max-w-md text-sm md:text-base leading-relaxed">
-                We&apos;re not just about transactions, we
-                &apos;re about relationships. Here&apos;s why we&aposre
-                the first choice for individuals and corporations alike.
+                Choose 7Janpath Forex for the best exchange rates, reliable
+                service, and a seamless foreign exchange experience.
               </p>
             </div>
           </div>
@@ -35,11 +34,11 @@ export default function Third() {
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg shadow-lg text-center border-blue-300 border-2">
               <div className="text-blue-400 text-3xl md:text-4xl mb-4">⚡</div>
               <h3 className="font-bold text-2xl md:text-3xl font-allround-bold text-gray-800">
-                Direct, Instant Service
+                Competitive Exchange Rates
               </h3>
               <p className="text-gray-600 mt-4 font-Helvetica text-sm md:text-base leading-relaxed">
-                No hidden fees or surprises. Our rates are upfront and
-                competitive.
+                Get the best deals on a wide range of currencies, saving you
+                money on every transaction.
               </p>
             </div>
 
@@ -47,11 +46,11 @@ export default function Third() {
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg shadow-lg text-center border-blue-300 border-2">
               <div className="text-blue-400 text-3xl md:text-4xl mb-4">🏆</div>
               <h3 className="font-bold text-2xl md:text-3xl font-allround-bold text-gray-800">
-                28 Years of Forex Expertise
+                Convenience at Your Doorstep
               </h3>
               <p className="text-gray-600 mt-4 font-Helvetica text-sm md:text-base leading-relaxed">
-                Our knowledge is your advantage in the currency markets, guiding
-                you to financial success.
+                Benefit from convenient options like home delivery and online
+                services to save you time and effort.
               </p>
             </div>
 
@@ -59,11 +58,11 @@ export default function Third() {
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg shadow-lg text-center border-blue-300 border-2">
               <div className="text-blue-400 text-3xl md:text-4xl mb-4">💼</div>
               <h3 className="font-bold text-2xl md:text-3xl font-allround-bold text-gray-800">
-                A Well Known Brand in Foreign Exchange
+                Trusted <span className="font-sans">&</span> Secure
               </h3>
               <p className="text-gray-600 mt-4 font-Helvetica text-sm md:text-base leading-relaxed">
-                No hidden fees or surprises. Our rates are upfront and
-                competitive.
+                We are RBI approved company and we prioritize your security with
+                robust systems and compliance with all relevant regulations.
               </p>
             </div>
           </div>
