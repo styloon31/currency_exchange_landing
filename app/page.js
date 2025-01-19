@@ -4,6 +4,7 @@ import HeroForm from "./components/HeroForm";
 import Second from "./components/Second";
 import Thrid from "./components/Third";
 import Footer from "./components/Footer";
+import Popup from "./components/Popup";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroForm />
       <Second />
       <Thrid />
+      <Popup />
       <Footer />
     </div>
   );
