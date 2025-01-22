@@ -10,35 +10,30 @@ export default function FormTabs() {
   const [inrAmount, setInrAmount] = useState("");
   const [forexAmount, setForexAmount] = useState("");
   const [selectedCurrency, setSelectedCurrency] = useState("USD");
-  const [conversionRate, setConversionRate] = useState(86.27);
+  const [conversionRate, setConversionRate] = useState(86.70);
+  const [conversionRateSell, setConversionRateSell] = useState(85.50);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [city, setCity] = useState("");
 
   const exchangeRates = {
-    USD: { rate: 86.70, symbol: "$" },
-  EUR: { rate: 88.80, symbol: "€" },
-  GBP: { rate: 107.50, symbol: "£" },
-  AUD: { rate: 53.90, symbol: "A$" },
-  CAD: { rate: 60.65, symbol: "C$" },
-  SGD: { rate: 63.65, symbol: "S$" },
-  JPY: { rate: 0.562, symbol: "¥" },
-  CHF: { rate: 95.50, symbol: "CHF" },
-  THB: { rate: 2.535, symbol: "฿" },
-  AED: { rate: 23.70, symbol: "د.إ" },
-  CNY: { rate: 12.35, symbol: "¥" },
-  MYR: { rate: 20.02, symbol: "RM" },
-  VND: { rate: 0.00380, symbol: "₫" },
-  IDR: { rate: 0.00573, symbol: "Rp" },
-  HKD: { rate: 11.62, symbol: "HK$" },
-  TRL: { rate: 3.00, symbol: "₺" },
-  NZD: { rate: 49.40, symbol: "NZ$" },
+    USD: { buyRate: 85.00, sellRate: 88.00, symbol: "$" },
+    EUR: { buyRate: 88.00, sellRate: 96.00, symbol: "€" },
+    GBP: { buyRate: 105.00, sellRate: 111.00, symbol: "£" },
+    AUD: { buyRate: 53.00, sellRate: 59.00, symbol: "A$" },
+    CAD: { buyRate: 59.00, sellRate: 66.00, symbol: "C$" },
+    SGD: { buyRate: 62.00, sellRate: 68.00, symbol: "S$" },
+    JPY: { buyRate: 0.52, sellRate: 0.650, symbol: "¥" },
+    CHF: { buyRate: 95.50, sellRate: 94.20, symbol: "CHF" },
+    THB: { buyRate: 2.535, sellRate: 2.500, symbol: "฿" },
+    AED: { buyRate: 22.00, sellRate: 25.00, symbol: "د.إ" },
   };
 
   const handleCurrencyChange = (e) => {
     const currency = e.target.value;
     setSelectedCurrency(currency);
-    setConversionRate(exchangeRates[currency].rate);
+    setConversionRate(exchangeRates[currency].buyRate);
+    setConversionRateSell(exchangeRates[currency].sellRate)
     resetAmounts();
   };
 
@@ -186,7 +181,7 @@ export default function FormTabs() {
                 className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm"
               />
               <span className="text-gray-500 text-sm">
-                1 = ₹ {conversionRate}
+                1 = ₹ {conversionRateSell}
               </span>
             </div>
           </div>
