@@ -1,11 +1,10 @@
 "use client";
 import { useState } from "react";
-import { collection, addDoc } from "firebase/firestore"; // Firestore imports
+import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
-import { db } from "../firebase";
 
 export default function FormTabs() {
-  const [activeTab, setActiveTab] = useState("Buy"); // Active tab state
+  const [activeTab, setActiveTab] = useState("Buy");
 
   const [inrAmount, setInrAmount] = useState("");
   const [forexAmount, setForexAmount] = useState("");
@@ -88,28 +87,32 @@ export default function FormTabs() {
 
     if (!validateForm()) return;
 
-    const requestData = {
+    const formType = activeTab === "Buy" ? "Buy" : "Sell";
+
+    const templateParams = {
+      to_name: "Admin",
+      formType,
       name,
       phone,
-      forexAmount,
-      inrAmount,
-      selectedCurrency,
-      conversionRate,
       city,
-      timestamp: new Date(),
+      inrAmount,
+      forexAmount,
+      selectedCurrency,
+      conversionRate: formType === "Buy" ? conversionRate : conversionRateSell,
     };
 
-    // Determine collection based on activeTab
-    const collectionName =
-      activeTab === "Buy" ? "buy-requests" : "sell-requests";
-
     try {
-      await addDoc(collection(db, collectionName), requestData);
+      await emailjs.send(
+        "service_ehcbiso", // Replace with your EmailJS service ID
+        "template_1yfzdmp", // Replace with your EmailJS template ID
+        templateParams,
+        "vvGN1-pLIvz-Gc4AQ" // Replace with your EmailJS user ID
+      );
 
       Swal.fire({
         icon: "success",
         title: "Success",
-        text: `Your ${activeTab} request has been submitted successfully!`,
+        text: `Your ${formType} request has been submitted successfully!`,
       });
 
       setName("");
@@ -221,6 +224,7 @@ export default function FormTabs() {
             <button
               type="submit"
               className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition text-sm"
+              onSubmit={handleSubmit}
             >
               Request a Callback
             </button>
@@ -321,6 +325,7 @@ export default function FormTabs() {
             <button
               type="submit"
               className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition text-sm"
+              onSubmit={handleSubmit}
             >
               Request a Callback
             </button>
