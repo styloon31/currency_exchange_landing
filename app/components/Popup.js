@@ -1,8 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import { collection, addDoc } from "firebase/firestore"; // Firestore imports
+import emailjs from "emailjs-com"; // Import EmailJS
 import Swal from "sweetalert2"; // SweetAlert2
-import { db } from "../firebase"; // Import Firebase config
 
 export default function Popup() {
   const [isOpen, setIsOpen] = useState(false); // Controls popup visibility
@@ -64,17 +63,21 @@ export default function Popup() {
 
     if (!validateForm()) return; // If validation fails, stop execution
 
-    // Prepare data for Firestore
-    const requestData = {
-      name,
-      phone,
-      email,
-      timestamp: new Date(), // Add a timestamp
+    // Prepare data for EmailJS
+    const templateParams = {
+      name, // Name from the form
+      phone, // Phone from the form
+      email, // Email from the form
     };
 
     try {
-      // Save data to Firestore
-      await addDoc(collection(db, "callback_requests"), requestData);
+      // Send email using EmailJS
+      await emailjs.send(
+        "service_ehcbiso", // Replace with your EmailJS service ID
+        "template_cr8rxfq", // Replace with your EmailJS template ID
+        templateParams,
+        "vvGN1-pLIvz-Gc4AQ" // Replace with your EmailJS user ID
+      );
 
       // Show success alert
       Swal.fire({
