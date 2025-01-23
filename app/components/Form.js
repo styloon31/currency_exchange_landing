@@ -10,30 +10,37 @@ export default function FormTabs() {
   const [inrAmount, setInrAmount] = useState("");
   const [forexAmount, setForexAmount] = useState("");
   const [selectedCurrency, setSelectedCurrency] = useState("USD");
-  const [conversionRate, setConversionRate] = useState(86.70);
-  const [conversionRateSell, setConversionRateSell] = useState(85.50);
+  const [conversionRate, setConversionRate] = useState(86.7);
+  const [conversionRateSell, setConversionRateSell] = useState(85.5);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [city, setCity] = useState("");
 
   const exchangeRates = {
-    USD: { buyRate: 85.00, sellRate: 88.00, symbol: "$" },
-    EUR: { buyRate: 88.00, sellRate: 96.00, symbol: "€" },
-    GBP: { buyRate: 105.00, sellRate: 111.00, symbol: "£" },
-    AUD: { buyRate: 53.00, sellRate: 59.00, symbol: "A$" },
-    CAD: { buyRate: 59.00, sellRate: 66.00, symbol: "C$" },
-    SGD: { buyRate: 62.00, sellRate: 68.00, symbol: "S$" },
-    JPY: { buyRate: 0.52, sellRate: 0.650, symbol: "¥" },
-    CHF: { buyRate: 95.50, sellRate: 94.20, symbol: "CHF" },
-    THB: { buyRate: 2.535, sellRate: 2.500, symbol: "฿" },
-    AED: { buyRate: 22.00, sellRate: 25.00, symbol: "د.إ" },
+    USD: { buyRate: 86.4, sellRate: 86.85, symbol: "$" },
+    EUR: { buyRate: 89.97, sellRate: 90.67, symbol: "€" },
+    GBP: { buyRate: 106.27, sellRate: 107.22, symbol: "£" },
+    AUD: { buyRate: 54.25, sellRate: 54.95, symbol: "A$" },
+    CAD: { buyRate: 60.2, sellRate: 60.0, symbol: "C$" },
+    NZD: { buyRate: 48.5, sellRate: 49.8, symbol: "$" },
+    AED: { buyRate: 23.55, sellRate: 23.73, symbol: "د.إ" },
+    SGD: { buyRate: 63.8, sellRate: 64.45, symbol: "S$" },
+    THB: { buyRate: 2.57, sellRate: 2.605, symbol: "฿" },
+    CHF: { buyRate: 95.0, sellRate: 96.3, symbol: "CHF" },
+    JPY: { buyRate: 0.547, sellRate: 0.572, symbol: "¥" },
+    HKD: { buyRate: 0.547, sellRate: 0.572, symbol: "HK$" },
+    MYR: { buyRate: 0.547, sellRate: 0.572, symbol: "RM" },
+    SAR: { buyRate: 0.547, sellRate: 0.572, symbol: "﷼" },
+    CNY: { buyRate: 0.547, sellRate: 0.572, symbol: "¥" },
+    VND: { buyRate: 0.547, sellRate: 0.572, symbol: "₫" },
+    IDR: { buyRate: 0.547, sellRate: 0.572, symbol: "Rp" },
   };
 
   const handleCurrencyChange = (e) => {
     const currency = e.target.value;
     setSelectedCurrency(currency);
     setConversionRate(exchangeRates[currency].buyRate);
-    setConversionRateSell(exchangeRates[currency].sellRate)
+    setConversionRateSell(exchangeRates[currency].sellRate);
     resetAmounts();
   };
 
