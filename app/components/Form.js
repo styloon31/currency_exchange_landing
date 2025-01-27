@@ -16,22 +16,22 @@ export default function FormTabs() {
   const [city, setCity] = useState("");
 
   const exchangeRates = {
-    USD: { buyRate: 86.20, sellRate: 86.65, symbol: "$" },
+    USD: { buyRate: 86.4, sellRate: 86.85, symbol: "$" },
     EUR: { buyRate: 90.45, sellRate: 91.15, symbol: "€" },
     GBP: { buyRate: 107.36, sellRate: 108.31, symbol: "£" },
     AUD: { buyRate: 54.35, sellRate: 55.05, symbol: "A$" },
-    CAD: { buyRate: 60.20, sellRate: 60.90, symbol: "C$" },
-    NZD: { buyRate: 48.70, sellRate: 50.00, symbol: "$" },
-    AED: { buyRate: 23.52, sellRate: 23.70, symbol: "د.إ" },
-    SGD: { buyRate: 64.10, sellRate: 64.75, symbol: "S$" },
+    CAD: { buyRate: 60.2, sellRate: 60.9, symbol: "C$" },
+    NZD: { buyRate: 48.4, sellRate: 49.7, symbol: "$" },
+    AED: { buyRate: 23.56, sellRate: 23.74, symbol: "د.إ" },
+    SGD: { buyRate: 64.15, sellRate: 64.8, symbol: "S$" },
     THB: { buyRate: 2.59, sellRate: 2.622, symbol: "฿" },
-    CHF: { buyRate: 95.00, sellRate: 96.30, symbol: "CHF" },
+    CHF: { buyRate: 95.0, sellRate: 96.3, symbol: "CHF" },
     JPY: { buyRate: 0.552, sellRate: 0.577, symbol: "¥" },
-    HKD: { buyRate: 11.20, sellRate: 11.65, symbol: "HK$" },
-    MYR: { buyRate: 19.65, sellRate: 20.55, symbol: "RM" },
-    SAR: { buyRate: 22.70, sellRate: 23.40, symbol: "﷼" },
-    CNY: { buyRate: 12.10, sellRate: 12.40, symbol: "¥" },
-    VND: { buyRate: 0.00350, sellRate: 0.00384, symbol: "₫" },
+    HKD: { buyRate: 11.2, sellRate: 11.65, symbol: "HK$" },
+    MYR: { buyRate: 19.65, sellRate: 20.5, symbol: "RM" },
+    SAR: { buyRate: 22.7, sellRate: 23.5, symbol: "﷼" },
+    CNY: { buyRate: 12.1, sellRate: 12.4, symbol: "¥" },
+    VND: { buyRate: 0.0035, sellRate: 0.00384, symbol: "₫" },
     IDR: { buyRate: 0.00534, sellRate: 0.00592, symbol: "Rp" },
   };
 
