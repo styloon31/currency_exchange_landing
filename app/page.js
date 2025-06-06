@@ -14,7 +14,7 @@ export default function Home() {
       <HeroForm />
       <Second />
       <Thrid />
-      <Photo />
+      {/* <Photo /> */}
       <Popup />
       <Footer />
     </div>
