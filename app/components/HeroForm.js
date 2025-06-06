@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Form from "./Form";
 import { Check } from "lucide-react";
+import DetailsForm from "./DetailsForm";
 
 export default function HeroForm() {
   return (
@@ -43,7 +44,7 @@ export default function HeroForm() {
           </div> */}
         </div>
         <div className=" col-span-1 flex items-center justify-center w-full h-full relative z-10 px-10">
-          <Form />
+          <DetailsForm />
         </div>
       </div>
     </div>
